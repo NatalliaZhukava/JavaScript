@@ -29,6 +29,7 @@
 
 
 
+**OUTPUT**  
 [Running] node "f:\Testing\launch.json\HW_1.js"  
 5  
 3  
@@ -39,3 +40,10 @@ NaN
 item_6 == 15 item_6_type == number  
 item_7 == 15 item_7_type == string  
 You don’t have access cause your age is 10 It’s less then 18  
+
+
+| Задания со * | JS | OUTPUT
+|--- | --- | ---
+| 1*. Преобразовать написанный код в 26-33 пунктах в функцию, принимающую на вход возраст.<br>Пример: const checkAge = function(age) {<br>Ваши преобразования<br>}<br>Вывести в консоль результат работы функции с возрастами 17, 18, 61 | const checkAge = function(age) {<br>const age_2 = 18;<br>const age_3 = 60;<br>if (age < age_2) {console.log("You don’t have access cause your age is " + age + " It’s less then " + age_2)}<br>else if (age >=  age_2 && age < age_3){console.log("Welcome!")}<br>else if (age  > age_3){console.log("Keep calm and look Culture channel")}<br>else {console.log("Technical work")};<br>}<br>checkAge(17);<br>checkAge(18);<br>checkAge(61); | Running] node "f:\Testing\launch.json\HW_1.js"<br>You don’t have access cause your age is 17 It’s less then 18<br>Welcome!<br>Keep calm and look Culture channel
+| 2*. Преобразовать задание 1* таким образом, чтобы первым делом в функции проверялся тип данных. И если он не Number - кидалась ошибка. | const checkAge = function(age) {<br>const age_2 = 18;<br>const age_3 = 60;<br>if (typeof age !== 'number') {<br>console.log("Error: age should be a number");<br>}else if (age < age_2) {console.log("You don’t have access cause your age is " + age + " It’s less then " + age_2)}<br>else if (age >=  age_2 && age < age_3){console.log("Welcome!")}<br>else if (age  > age_3){console.log("Keep calm and look Culture channel")}<br>else {console.log("Technical work")};<br>}<br>checkAge(17);<br>checkAge(18);<br>checkAge(61);<br>checkAge("Twenty"); | Running] node "f:\Testing\launch.json\HW_1.js"<br>You don’t have access cause your age is 17 It’s less then 18<br>Welcome!<br>Keep calm and look Culture channel<br>Error: age should be a number
+| 3**. Преобразовать 2* таким образом, чтобы значение '2' (строка в которой лежит ТОЛЬКО ЦИФРА) пропускалось, преобразовываясь в number | const checkAge = function(age) {<br>const age_2 = 18;<br>const age_3 = 60;<br>   if (typeof age !== 'number') {<br>age = Number(age)};<br>if (age < age_2) {console.log("You don’t have access cause your age is " + age + " It’s less then " + age_2)}<br>else if (age >=  age_2 && age < age_3){console.log("Welcome!")}<br>else if (age  > age_3){console.log("Keep calm and look Culture channel")}<br>else {console.log("Technical work")};<br>}<br>checkAge(17);<br>checkAge(18);<br>checkAge(61);<br>checkAge("20"); | Running] node "f:\Testing\launch.json\HW_1.js"<br>You don’t have access cause your age is 17 It’s less then 18<br>Welcome!<br>Keep calm and look Culture channel<br>Welcome!
