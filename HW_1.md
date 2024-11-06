@@ -72,6 +72,12 @@ item_7 == 15 item_7_type == string
 You don’t have access cause your age is 10 It’s less then 18  
 
 
-Задание | JS
---- | ---
-1. Создать переменную “item_1”<b>2. Присвоить переменной item_1 цифру 5. | let item_1 = 5;  
+| Задание | JS |
+| --- | --- |
+| 1. Создать переменную “item_1”<br>2. Присвоить переменной item_1 цифру 5. | let item_1 = 5; |
+| 3. Вывести в консоль item_1. | console.log(item_1); |
+| 4. Создать переменную “item_2”<br>5. Присвоить переменной item_2 цифру 3. | let item_2 = 3; |
+| 6. Вывести в консоль item_2. | console.log(item_2); |
+| 7. Создать переменную “item_3”<br>8. Присвоить переменной item_3 сложение item_1 и item_2. | let item_3 = item_1 + item_2; |
+| 9. Вывести в консоль item_3. | console.log(item_3); |
+| 10. Создать переменную “item_4”<br>11. Присвоить переменной item_4 строку “Yolochka” | let item_4 = "Yolochka"; |
